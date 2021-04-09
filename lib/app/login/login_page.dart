@@ -8,14 +8,15 @@ class LoginPage extends StatelessWidget {
         title: Text('Login'),
         elevation: 4.0,
       ),
-      body: buildLoginContent(),
+      body: _buildLoginContent(),
     );
   }
 
-  Widget buildLoginContent() {
-    return Container(
-      color: Colors.yellow,
+  Widget _buildLoginContent() {
+    return Padding(
+      padding: EdgeInsets.all(15.0),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
@@ -24,12 +25,14 @@ class LoginPage extends StatelessWidget {
               height: 100.0,
             ),
           ),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.brown,
             child: SizedBox(
               height: 100.0,
             ),
           ),
+          SizedBox(height: 8.0),
           Container(
             color: Colors.blue,
             child: SizedBox(
