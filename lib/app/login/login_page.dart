@@ -8,6 +8,20 @@ class LoginPage extends StatelessWidget {
         title: Text('Login'),
         elevation: 4.0,
       ),
+      body: Container(
+        color: Colors.yellow,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              color: Colors.red,
+              child: SizedBox(
+                height: 100.0,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
