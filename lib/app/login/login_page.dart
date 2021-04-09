@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -19,10 +20,12 @@ class LoginPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Container(
-            color: Colors.red,
-            child: SizedBox(
-              height: 100.0,
+          Text(
+            'LOGIN',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 32.0,
+              fontWeight: FontWeight.w600,
             ),
           ),
           SizedBox(height: 8.0),
@@ -39,6 +42,10 @@ class LoginPage extends StatelessWidget {
               height: 100.0,
             ),
           ),
+          SizedBox(height: 8.0),
+          RaisedButton(
+            child: Text('Login'),
+          )
         ],
       ),
     );
