@@ -29,22 +29,26 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.0),
-          Container(
-            color: Colors.brown,
-            child: SizedBox(
-              height: 100.0,
+          TextField(
+            decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'User Name',
+                hintText: 'Enter your username'
             ),
           ),
           SizedBox(height: 8.0),
-          Container(
-            color: Colors.blue,
-            child: SizedBox(
-              height: 100.0,
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Password',
+                hintText: 'Enter your password'
             ),
           ),
           SizedBox(height: 8.0),
           RaisedButton(
             child: Text('Login'),
+            onPressed: () {},
           )
         ],
       ),
